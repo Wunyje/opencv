@@ -1,8 +1,5 @@
-sudo apt -y update
-sudo apt -y install cmake --fix-missing
-
-sudo apt -y install aptitude
-sudo aptitude -y install build-essential
+git config --global user.email "wunyje@gmail.com"
+git config --global user.name "rk3588_dev"
 
 mkdir build
 cd build
