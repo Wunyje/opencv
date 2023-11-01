@@ -1,6 +1,11 @@
 git config --global user.email "wunyje@gmail.com"
 git config --global user.name "rk3588_dev"
 
+sudo apt -y update
+sudo apt install -y meson
+sudo apt install -y build-essential
+sudo apt install -y cmake
+
 mkdir build
 cd build
 sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/opencv470 -D OPENCV_GENERATE_PKGCONFIG=ON -D BUILD_opencv_java=OFF -D BUILD_opencv_python3=ON -D WITH_OPENMP=OFF -D WITH_GSTREAMER_0_10=OFF -D WITH_VTK=OFF -D WITH_LIBV4L=ON -D WITH_OPENMP=ON -D WITH_OPENGL=ON -D WITH_TBB=ON -D BUILD_SHARED_LIBS=ON -D ENABLE_PIC=ON -D WITH_ARITH_DEC=ON -D WITH_ARITH_ENC=ON -D WITH_FFMPEG=ON -D WITH_GSTREAMER=ON -D WITH_IMGCODEC_HDR=ON -D WITH_IMGCODEC_PXM=ON -D WITH_IMGCODEC_SUNRASTER=ON -D WITH_JASPER=ON -D WITH_JPEG=ON -D WITH_LAPACK=ON -D WITH_PNG=ON -D WITH_QT=ON -D WITH_PTHREADS_PF=ON -D WITH_TIFF=ON -D WITH_WEBP=ON -D WITH_GTK=ON -D WITH_OPENCL=ON ..
